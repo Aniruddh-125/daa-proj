@@ -4,6 +4,8 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  // This is the crucial line to fix the issue:
+  darkMode: 'class', 
   theme: {
     extend: {},
   },
