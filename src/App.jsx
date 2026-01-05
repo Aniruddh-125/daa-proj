@@ -62,7 +62,7 @@ const INITIAL_TOPOLOGY = [
 // --- Helper Functions for Gemini API ---
 
 const callGemini = async (prompt) => {
-  const apiKey = ""; // API Key provided by the environment
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY; // API Key provided by the environment
   
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
   
